@@ -1,0 +1,9 @@
+.hh-box{width: 200px; height: 280px; border: 1px solid blue;
+text-align: center; position: relative; 
+display:inline-block; margin: 5px;}
+.hh-box:hover{box-shadow: 0 0 7px red; border-radius: 7px;}
+.hh-box-img{width: 180px;}
+.hh-box-new{width: 35px; position: absolute;top:0; right: 0;}
+.hh-box-icons{width: 25px; position: absolute; bottom:0;right: 3px;}
+.hh-box-name{font-size: larger; position: absolute;
+top: -25px; width: inherit;}

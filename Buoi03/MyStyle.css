@@ -1,0 +1,23 @@
+/*File MyStyle.css*/
+#myheader{
+    border: 2px double #ff00ff;
+    padding: 5px;
+}
+p {
+    background-color: blanchedalmond;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.chu-do-dam {
+    color: red;
+    font-weight: bolder;
+}
+
+.vien {
+    border: 1px solid magenta;
+    color: green;
+}

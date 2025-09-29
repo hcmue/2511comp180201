@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <form name="formDangNhap" method="post" action="XuLyDangNhap.php">
+        <div>
+            Username:
+            <input name="username" placeholder="Nhập username" />
+        </div>
+        <div>
+            Password:
+            <input type="password" placeholder="Nhập password"
+                name="password" />
+        </div>
+        <div>
+            Giới tính:
+            <input type="radio" checked value="1" name="gioitinh" />Nữ
+            <input type="radio" value="0" name="gioitinh" />Nam
+            <input type="radio" value="-1" name="gioitinh" />Khác
+        </div>
+        <div>
+            Nơi sinh:
+            <select name="noisinh">
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">Hồ Chí Minh</option>
+                <option value="DN">Đà Nẵng</option>
+                <option value="KH">Khánh Hòa</option>
+            </select>
+        </div>
+        <input type="submit" value="Đăng nhập" />
+        <input type="reset" value="Nhập lại" />
+    </form>
+</body>
+</html>
