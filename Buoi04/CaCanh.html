@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my_fish:hover {
+            transform: translate(100px, 50px) rotate(20deg);
+        }
+
+        @keyframes caboi {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                transform: translate(100px, 50px) rotate(20deg);
+            }
+
+            0% {
+                transform: translate(200px, 150px) rotate(60deg);
+            }
+        }
+
+        #my_fish {
+            animation-name: caboi;
+            animation-duration: 20s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ho_ca">
+        <img id="my_fish" src="cacanh.png" alt="Cá cảnh" />
+    </div>
+</body>
+
+</html>
