@@ -1,0 +1,10 @@
+.hh-header {
+  height: 120px;
+  position: relative;
+}
+.hh-logo {
+  height: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
