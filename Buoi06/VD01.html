@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h2>Nhập liệu</h2>
+        <div>
+            Họ tên: <input type="text" name="hoten" id="hoten" />
+        </div>
+        <div>
+            Chọn môn học:
+            <select name="monhoc" id="monhoc">
+                <option value="LTNC">Lập trình nâng cao</option>
+                <option value="LTHDT">Lập trình Hướng đối tượng</option>
+            </select>
+        </div>
+        <button type="button" onclick="xuLyGhiDanh()">Ghi danh</button>
+        <button type="button" id="btnHello">Hello</button>
+        <div id="ketqua"></div>
+    </form>
+    <script>
+        function xuLyGhiDanh() {
+            let hoTenElement = document.getElementById("hoten");
+            let monHocElemet = document.getElementById("monhoc");
+            if (hoTenElement.value.length == 0) {
+                alert("Chưa nhập họ tên");
+                hoTenElement.focus();
+                return false;
+            }
+            //Nhập đủ
+            let chuoi = `Bạn ${hoTenElement.value} ghi danh môn ${monHocElemet.value}`;
+            alert(chuoi);
+            document.getElementById("ketqua").innerHTML = chuoi;
+        }
+        document.getElementById("btnHello").addEventListener('click', function (e) { alert('Hello world') });
+    </script>
+</body>
+
+</html>
