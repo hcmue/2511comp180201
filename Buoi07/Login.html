@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="/action_page.php" class="p-3">
+        <div class="mb-3 mt-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <button type="submit" id="btnLogin" class="btn btn-primary">Login</button>
+        <div class="text-danger" id="message"></div>
+    </form>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnLogin").click(function (e) {
+                e.preventDefault();
+                let user = $("#username");
+                let pass = $("#password");
+                if (user.val().trim().length == 0 || pass.val().trim().length == 0) {
+                    $("#message").html("Chưa nhập thông tin");
+                    return;
+                }
+                $("#message").html("");
+                if (user.val().trim().length < 5 || pass.val().trim().length < 5) {
+                    $("#message").html("Sai thông tin đăng nhập");
+                    return;
+                }
+                $("#message").html("Đăng nhập thành công!!!");
+            });
+        });
+    </script>
+</body>
+
+</html>

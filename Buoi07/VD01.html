@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>My Div 1</div>
+    <div>My Div 2</div>
+    <div>My Div 3</div>
+    <div>My Div 4</div>
+    <div>My Div 5</div>
+    <div>My Div 6</div>
+    <div>My Div 7</div>
+    <div>My Div 8</div>
+    <div>My Div 9</div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").hover(function () {
+                $(this).css({
+                    'color': 'red',
+                    'font-size': 'larger'
+                });
+            });
+            //gắn sự kiện click cho div
+            $("div").click(function () {
+                $(this).hide(3000);
+            });
+        });
+    </script>
+</body>
+
+</html>
